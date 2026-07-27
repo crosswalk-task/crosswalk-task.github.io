@@ -1,0 +1,8 @@
+.farama-project-heading {
+  margin-top: 3rem !important;
+}
+
+/* hide "Farama Foundation" header */
+.farama-header__right {
+    display: none !important;
+}
