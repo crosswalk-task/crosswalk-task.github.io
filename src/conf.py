@@ -41,11 +41,11 @@ extensions = [
     "sphinx.ext.githubpages",
     "sphinx.ext.viewcode",
     "sphinx.ext.autosectionlabel",
-    "sphinxcontrib.bibtex",
+    # "sphinxcontrib.bibtex", # needs "bibtex_bibfiles" setting
     "sphinxcontrib.video",
     "jupyter_sphinx",
     "myst_parser",
-    "sphinx_github_changelog",
+    # "sphinx_github_changelog", # CrosswalkEnv repo has to become a public repo
 ]
 
 autodoc_default_flags = [
@@ -96,7 +96,7 @@ html_theme_options = {
     # "light_logo": "img/crosswalk.svg",
     # "dark_logo": "img/crosswalk-white.svg",
     # "image": "img/crosswalk-github.png",
-    "gtag": "G-6H9C8TWXZ8",
+    # "gtag": "G-6H9C8TWXZ8",
     "description": "Gymnasium environment for risky decision-making tasks",
     "versioning": True,
     "source_repository": "https://github.com/crosswalk-task/crosswalk-task.github.io",
@@ -118,10 +118,10 @@ html_css_files = [
 
 # -- BibTeX -------------------------------------------------------------
 
-bibtex_bibfiles = ["bibliography/biblio.bib"]
-bibtex_encoding = "latin"
-bibtex_default_style = "alpha"
+# bibtex_bibfiles = ["bibliography/biblio.bib"]
+# bibtex_encoding = "latin"
+# bibtex_default_style = "alpha"
 
 # -- Generate Changelog -------------------------------------------------
 
-sphinx_github_changelog_token = os.environ.get("SPHINX_GITHUB_CHANGELOG_TOKEN")
+# sphinx_github_changelog_token = os.environ.get("SPHINX_GITHUB_CHANGELOG_TOKEN")
