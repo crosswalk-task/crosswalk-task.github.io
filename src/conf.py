@@ -91,7 +91,7 @@ html_theme = "celshast"
 html_title = "Crosswalk Task Documentation"
 html_baseurl = "https://crosswalk-task.github.io"
 html_copy_source = False
-# html_favicon = "_static/img/crosswalk-favicon.png"
+html_favicon = "_static/images/crosswalk-favicon.png"
 html_theme_options = {
     # "light_logo": "img/crosswalk.svg",
     # "dark_logo": "img/crosswalk-white.svg",
