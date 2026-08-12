@@ -17,9 +17,7 @@ Gymnasium environment for risky decision-making tasks
 :align: center
 ```
 
-**CrosswalkEnv** is a [Gymnasium](https://gymnasium.farama.org/) environment for studying decision-making under risky pedestrian crossing scenarios.
-
-**Crosswalk Task** is a behavioral task for collecting human decision-making data in **CrosswalkEnv**, providing sequential state–action trajectories through the Gymnasium interface. Unlike traditional trial-based behavioral tasks that yield only aggregate behavioral measures, it supports both conventional behavioral analyses and reinforcement learning-based approaches.
+**CrosswalkEnv** is a [Gymnasium](https://gymnasium.farama.org/) environment for studying decision-making under risky pedestrian crossing scenarios. It follows the standard Gymnasium API, where agent–environment interactions generate trajectories of observations, actions, and rewards:
 
 ```python
 import gymnasium as gym
@@ -27,18 +25,18 @@ import crosswalk_env
 
 gym.register_envs(crosswalk_env)
 
-# initialize the gymnasium environment
+# initialize the environment
 env = gym.make("crosswalk-v1")
 
-# simulate 5 episodes
+# run 5 episodes
 for _ in range(5):
     # start a new episode and get initial observation
     obs, info = env.reset()
     while True:
-        # choose the next action based on the current policy
+        # choose the next action using a policy (randomly sampled for demonstration)
         action = env.action_space.sample()
 
-        # transition through the environment with the action to receive the next observation and reward
+        # interact with the environment by taking the action and receiving the next observation and reward
         obs, reward, terminated, truncated, info = env.step(action)
 
         # exit if the episode has ended
@@ -48,6 +46,18 @@ for _ in range(5):
 env.close()
 ```
 
+**Crosswalk Task** is a behavioral task built on **CrosswalkEnv** for collecting human decision-making data. Each session records sequential observation–action trajectories, making the resulting data compatible with both conventional behavioral analyses and reinforcement learning-based approaches. Each behavioral session can be launched with a single function call:
+
+```python
+from crosswalk_env import task
+
+# practice session (5 minutes)
+task.run_session(subj_id=1, session_id=0, max_seconds=300, save=False)
+
+# main session (20 minutes)
+task.run_session(subj_id=1, session_id=1, max_seconds=1200)
+```
+
 <!-- This documentation provides: -->
 
 <!-- 1. a {ref}`quick start guide <quickstart>` describing the environments and how to get started; -->
@@ -55,13 +65,13 @@ env.close()
 <!-- 2. a description of the available {ref}`environments <environments>` and their configuration options;
 3. a {ref}`detailed guide <user_guide>` covering the nuts and bolts of the project, and how *you* can contribute. -->
 
-(index-how-to-cite-this-work)=
-# How to cite this work?
+<!-- (index-how-to-cite-this-work)= -->
+<!-- # How to cite this work? -->
 
-If you use this package, please consider citing it with this piece of BibTeX:
-<!-- TODO: replace with published paper -->
+<!-- If you use this package, please consider citing it with this piece of BibTeX: -->
+<!-- TODO: replace with preprint -->
 
-```bibtex
+<!-- ```bibtex
 @misc{crosswalk-env,
   author = {Jeong, Jinwoo},
   title = {CrosswalkEnv},
@@ -70,7 +80,7 @@ If you use this package, please consider citing it with this piece of BibTeX:
   journal = {GitHub repository},
   howpublished = {\url{https://github.com/crosswalk-task/CrosswalkEnv}},
 }
-```
+``` -->
 
 <!-- sections for the main navigation bar -->
 ```{toctree}

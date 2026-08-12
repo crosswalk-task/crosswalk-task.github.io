@@ -88,7 +88,7 @@ myst_enable_extensions = [
 # a list of builtin themes.
 #
 html_theme = "celshast"
-html_title = "Crosswalk Task Documentation"
+html_title = "Crosswalk Task"
 html_baseurl = "https://crosswalk-task.github.io"
 html_copy_source = False
 html_favicon = "_static/images/crosswalk-favicon.png"
