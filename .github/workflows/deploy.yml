@@ -74,7 +74,9 @@ jobs:
 
       - name: Log Node.js environment
         run: |
+          which node
           node --version
+          which npm
           npm --version
 
       - name: Install demo dependencies
