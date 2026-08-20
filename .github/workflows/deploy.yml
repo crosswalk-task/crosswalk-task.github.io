@@ -13,6 +13,7 @@ on:
 
 permissions:
   contents: read
+  pages: read
 
 concurrency:
   group: github-pages
@@ -30,6 +31,14 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v6
 
+      # base path for GitHub Pages 
+      - name: Configure GitHub Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      # ------------------------------------------------------------------
+      # Main (Sphinx)
+      # ------------------------------------------------------------------
       - name: Set up Conda
         uses: conda-incubator/setup-miniconda@v4
         with:
@@ -52,6 +61,36 @@ jobs:
             --keep-going \
             src \
             _build/html
+
+      # ------------------------------------------------------------------
+      # /demo (React/Vite)
+      # ------------------------------------------------------------------
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: demo/package-lock.json
+
+      - name: Log Node.js environment
+        run: |
+          node --version
+          npm --version
+
+      - name: Install demo dependencies
+        working-directory: demo
+        run: npm ci
+
+      - name: Build demo
+        working-directory: demo
+        run: |
+          npm run build -- \
+            --base "${{ steps.pages.outputs.base_path }}/demo/"
+
+      - name: Add demo to Pages site
+        run: |
+          mkdir -p _build/html/demo
+          cp -a demo/dist/. _build/html/demo/
 
       - name: Upload Pages artifact
         if: github.event_name != 'pull_request'
