@@ -113,9 +113,7 @@ html_context["github_version"] = "main"
 # html_context["slug"] = "doc"
 
 html_static_path = ["_static"]
-html_css_files = [
-    "title_page.css",
-]
+html_css_files = ["main.css"]
 
 # -- BibTeX -------------------------------------------------------------
 

@@ -8,9 +8,9 @@ lastpage:
 Gymnasium environment for risky decision-making tasks
 ```
 
-```{video} _static/videos/crosswalk_task_demo.mp4
-:width: 500
-:autoplay:
+```{video} /_static/videos/crosswalk_task_demo.mp4
+:width: 100%
+:class: max-width-600
 :loop:
 :muted:
 :playsinline:
@@ -100,6 +100,7 @@ task.run_session(subj_id=1, session_id=1, max_seconds=1200)
 :caption: Crosswalk Web Env
 
 Getting Started <crosswalkwebenv/getting_started>
+ExperimentPage <crosswalkwebenv/experiement_page>
 Live Demo <https://crosswalk-task.github.io/demo/>
 GitHub <https://github.com/crosswalk-task/CrosswalkWebEnv>
 ```
