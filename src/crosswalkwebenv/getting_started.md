@@ -1,11 +1,11 @@
 (webenv_getting_started)=
-# Getting Started with CrosswalkWebEnv
+# Getting Started with crosswalk-web-env
 
-CrosswalkWebEnv is a React-based reimplementation of CrosswalkEnv for running Crosswalk Task in a web browser. It is not designed to train reinforcement learning models directly. Instead, it provides infrastructure for scalable data collection, enabling web applications to collect human behavioral data in the form of state-action trajectories. The collected data can then be used with CrosswalkEnv for downstream model training, including imitation learning (IL) and inverse reinforcement learning (IRL).
+`crosswalk-web-env` is a React-based reimplementation of CrosswalkEnv for running Crosswalk Task in a web browser. It is not designed to train reinforcement learning models directly. Instead, it provides infrastructure for scalable data collection, enabling web applications to collect human behavioral data in the form of state-action trajectories. The collected data can then be used with CrosswalkEnv for downstream model training, including imitation learning (IL) and inverse reinforcement learning (IRL).
 
 ## Installation
 
-CrosswalkWebEnv is provided as a React component and is intended to be used within a React-based project. It requires the following peer dependencies:
+`crosswalk-web-env` is provided as a React component and is intended to be used within a React-based project. It requires the following peer dependencies:
 
 - React 19.2.8+
 - React DOM 19.2.8+
@@ -21,7 +21,7 @@ npm install crosswalk-web-env
 
 A Live Demo is available at [https://crosswalk-task.github.io/demo](https://crosswalk-task.github.io/demo/). You can use the demo to run and interact with Crosswalk Task directly in a web browser without setting up a local React project.
 
-To set up the same web interface locally using CrosswalkWebEnv, start by creating a minimal React app with [Vite](https://vite.dev/). The following commands generate the boilerplate code and install CrosswalkWebEnv. The example below was tested using Node.js `v22.23.2`, npm `v10.9.8`, and Vite `v8.2.2`.
+To set up the same web interface locally using `crosswalk-web-env`, start by creating a minimal React app with [Vite](https://vite.dev/). The following commands generate the boilerplate code and install `crosswalk-web-env`. The example below was tested using Node.js `v22.23.2`, npm `v10.9.8`, and Vite `v8.2.2`.
 
 ```bash
 npm create vite@9.1.2 demo -- --template react

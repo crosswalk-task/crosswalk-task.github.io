@@ -1,7 +1,7 @@
 (webenv_experiment_page)=
 # ExperimentPage
 
-`ExperimentPage` is the main React component provided by CrosswalkWebEnv. It provides an entry screen where participants can review the task instructions and start a Crosswalk Task session, during which multiple episodes are played consecutively without a break.
+`ExperimentPage` is the main React component provided by `crosswalk-web-env`. It provides an entry screen where participants can review the task instructions and start a Crosswalk Task session, during which multiple episodes are played consecutively without a break.
 
 * Pressing **Instructions** opens the full task instructions.
 * Pressing **Start Game** runs a single session according to the configuration specified through the component's props.
@@ -184,7 +184,7 @@ Omitting `localSave` leaves automatic saving disabled, as its default value is `
 
 During the experiment used to validate the Crosswalk Task, behavioral data were uploaded to a server through HTTP requests for scalable data collection. However, network failures occasionally caused data loss in that setup, so we do not recommend server-based collection as the *default* data-saving method.
 
-In the current version of CrosswalkWebEnv, `localSave` is the only built-in mechanism for saving participant behavioral data. Because each completed episode is saved directly to the participant's local device, data storage does not require a network connection and avoids the risk of data loss caused by network failures during upload.
+In the current version of `crosswalk-web-env`, `localSave` is the only built-in mechanism for saving participant behavioral data. Because each completed episode is saved directly to the participant's local device, data storage does not require a network connection and avoids the risk of data loss caused by network failures during upload.
 
-If server-based data collection is required for scalability, you can fork the [CrosswalkWebEnv GitHub repository](https://github.com/crosswalk-task/CrosswalkWebEnv), set up a server to receive the collected data, and implement custom logic to send episode results to the server through HTTP requests.
+If server-based data collection is required for scalability, you can fork the [crosswalk-web-env GitHub repository](https://github.com/crosswalk-task/crosswalk-web-env), set up a server to receive the collected data, and implement custom logic to send episode results to the server through HTTP requests.
 ```

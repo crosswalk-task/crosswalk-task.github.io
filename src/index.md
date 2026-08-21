@@ -97,12 +97,12 @@ task.run_session(subj_id=1, session_id=1, max_seconds=1200)
 
 ```{toctree}
 :hidden:
-:caption: Crosswalk Web Env
+:caption: Crosswalk-Web-Env
 
 Getting Started <crosswalkwebenv/getting_started>
 ExperimentPage <crosswalkwebenv/experiment_page>
 Live Demo <https://crosswalk-task.github.io/demo/>
-GitHub <https://github.com/crosswalk-task/CrosswalkWebEnv>
+GitHub <https://github.com/crosswalk-task/crosswalk-web-env>
 ```
 
 <!-- ```{toctree}
