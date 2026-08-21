@@ -17,6 +17,9 @@ Gymnasium environment for risky decision-making tasks
 :align: center
 ```
 
+{.hidden-page-title}
+# Home
+
 # CrosswalkEnv
 
 **CrosswalkEnv** is a [Gymnasium](https://gymnasium.farama.org/) environment for studying decision-making under risky pedestrian crossing scenarios. It follows the standard Gymnasium API, where agent–environment interactions generate trajectories of observations, actions, and rewards:

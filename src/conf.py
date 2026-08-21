@@ -79,6 +79,7 @@ autosectionlabel_prefix_document = True
 
 # -- MyST configuration -----------------------------------------------------
 myst_enable_extensions = [
+    "attrs_block",
     "dollarmath",
 ]
 
