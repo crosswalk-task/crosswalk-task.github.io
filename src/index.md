@@ -17,6 +17,8 @@ Gymnasium environment for risky decision-making tasks
 :align: center
 ```
 
+# CrosswalkEnv
+
 **CrosswalkEnv** is a [Gymnasium](https://gymnasium.farama.org/) environment for studying decision-making under risky pedestrian crossing scenarios. It follows the standard Gymnasium API, where agent–environment interactions generate trajectories of observations, actions, and rewards:
 
 ```python
@@ -45,6 +47,8 @@ for _ in range(5):
 
 env.close()
 ```
+
+# Crosswalk Task
 
 **Crosswalk Task** is a behavioral task built on **CrosswalkEnv** for collecting human decision-making data. Each session records sequential observation–action trajectories, making the resulting data compatible with both conventional behavioral analyses and reinforcement learning-based approaches. Each behavioral session can be launched with a single function call:
 
@@ -90,10 +94,11 @@ task.run_session(subj_id=1, session_id=1, max_seconds=1200)
 
 ```{toctree}
 :hidden:
-:caption: Development
+:caption: Crosswalk Web Env
 
-GitHub <https://github.com/crosswalk-task/CrosswalkEnv>
-release_notes/index
+Getting Started <crosswalkwebenv/getting_started>
+Live Demo <https://crosswalk-task.github.io/demo/>
+GitHub <https://github.com/crosswalk-task/CrosswalkWebEnv>
 ```
 
 <!-- ```{toctree}

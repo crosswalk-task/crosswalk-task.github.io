@@ -21,7 +21,7 @@ from typing import Any, Dict
 # import crosswalk_env
 
 project = "Crosswalk Task"
-copyright = "Crosswalk Task"
+copyright = "2026 Crosswalk Task"
 author = "Jinwoo Jeong"
 
 # The full version, including alpha/beta/rc tags
@@ -99,7 +99,7 @@ html_theme_options = {
     # "gtag": "G-6H9C8TWXZ8",
     "description": "Gymnasium environment for risky decision-making tasks",
     "versioning": True,
-    "source_repository": "https://github.com/crosswalk-task/crosswalk-task.github.io",
+    # "source_repository": "https://github.com/crosswalk-task/crosswalk-task.github.io",
     "source_branch": "main",
     "source_directory": "src/",
 }
