@@ -3,9 +3,12 @@ hide-toc: true
 firstpage:
 lastpage:
 ---
-
+<!-- 
 ```{project-heading}
-Gymnasium environment for risky decision-making tasks
+Crosswalk Task: A naturalistic reinforcement learning paradigm for risky decision-making
+``` -->
+```{project-heading}
+Gymnasium environment for risky decision-making
 ```
 
 ```{video} /_static/videos/crosswalk_task_demo.mp4
@@ -17,52 +20,57 @@ Gymnasium environment for risky decision-making tasks
 :align: center
 ```
 
-{.hidden-page-title}
-# Home
+{.hidden-page-title} 
+# Home 
+
+# Crosswalk Task
+
+**Crosswalk Task** is a naturalistic reinforcement learning paradigm for studying risk taking through real-time decision making. Inspired by road-crossing games such as [Crossy Road](https://crossyroadgame.io) and [Frogger](https://en.wikipedia.org/wiki/Frogger), participants cross roads while avoiding collisions with vehicles. The task introduces *crosswalks*, requiring participants to continuously choose between jaywalking as a risk-taking strategy and using crosswalks as a risk-averse strategy.
 
 # CrosswalkEnv
 
-**CrosswalkEnv** is a [Gymnasium](https://gymnasium.farama.org/) environment for studying decision-making under risky pedestrian crossing scenarios. It follows the standard Gymnasium API, where agent–environment interactions generate trajectories of observations, actions, and rewards:
+**CrosswalkEnv** is the Python/Gymnasium implementation of the Crosswalk Task. It is designed as an integrated framework for **human behavioral data collection** and **reinforcement learning model training**.
+
+Behavioral experiments with human participants can be launched with a single function call:
+
+```python
+from crosswalk_env import task
+
+task.run_session(subj_id=1000, session_id=1, max_seconds=1200)
+```
+
+Because **CrosswalkEnv** follows the standard [Gymnasium](https://gymnasium.farama.org/) API. State–action trajectories collected from human participants can be used to fit models using approaches such as imitation learning (IL) and inverse reinforcement learning (IRL). The environment can also be used directly to train and evaluate reinforcement learning agents without human data:
 
 ```python
 import gymnasium as gym
 import crosswalk_env
 
 gym.register_envs(crosswalk_env)
-
-# initialize the environment
 env = gym.make("crosswalk-v1")
-
-# run 5 episodes
 for _ in range(5):
-    # start a new episode and get initial observation
     obs, info = env.reset()
     while True:
-        # choose the next action using a policy (randomly sampled for demonstration)
+        # choose an action according to a policy (random policy for demonstration)
         action = env.action_space.sample()
-
-        # interact with the environment by taking the action and receiving the next observation and reward
         obs, reward, terminated, truncated, info = env.step(action)
-
-        # exit if the episode has ended
         if terminated or truncated:
             break
 
 env.close()
 ```
 
-# Crosswalk Task
+# crosswalk-web-env
 
-**Crosswalk Task** is a behavioral task built on **CrosswalkEnv** for collecting human decision-making data. Each session records sequential observation–action trajectories, making the resulting data compatible with both conventional behavioral analyses and reinforcement learning-based approaches. Each behavioral session can be launched with a single function call:
+**`crosswalk-web-env`** is a React-based web implementation of the Crosswalk Task, designed for deploying experiments online and collecting behavioral data at scale. It records state–action trajectories in the same format as **CrosswalkEnv**, allowing collected data to be used directly for downstream model training and analysis, including imitation learning (IL) and inverse reinforcement learning (IRL).
 
-```python
-from crosswalk_env import task
+```jsx
+import ExperimentPage from 'crosswalk-web-env';
 
-# practice session (5 minutes)
-task.run_session(subj_id=1, session_id=0, max_seconds=300, save=False)
-
-# main session (20 minutes)
-task.run_session(subj_id=1, session_id=1, max_seconds=1200)
+export default function App() {
+  return (
+    <ExperimentPage subjectId={1000} sessionId={1} maxSeconds={1200} localSave={true} />
+  );
+}
 ```
 
 <!-- This documentation provides: -->
