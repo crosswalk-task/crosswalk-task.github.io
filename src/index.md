@@ -1,7 +1,7 @@
 ---
 hide-toc: true
-firstpage:
-lastpage:
+# firstpage:
+# lastpage:
 ---
 <!-- 
 ```{project-heading}
