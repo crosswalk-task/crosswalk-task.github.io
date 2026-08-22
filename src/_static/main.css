@@ -11,6 +11,19 @@
     display: none !important;
 }
 
+/* left navigation */
+.sidebar-tree .caption {
+    text-transform: none;  /* uppercase; */
+    font-size: 0.9rem;
+    /* font-weight: 700; */
+    /* letter-spacing: 0.08em; */
+}
+
+.sidebar-tree .reference {
+  font-size: 0.9rem;
+}
+
+/* max width */
 .max-width-300 {
   max-width: 300px;
 }

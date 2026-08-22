@@ -100,12 +100,21 @@ export default function App() {
 <!-- sections for the main navigation bar -->
 ```{toctree}
 :hidden:
-:caption: Getting Started
+:caption: Crosswalk Task
+
+Task Structure <crosswalktask/tast_structure>
 ```
 
 ```{toctree}
 :hidden:
-:caption: Crosswalk-Web-Env
+:caption: CrosswalkEnv
+
+Getting Started <crosswalkenv/getting_started>
+```
+
+```{toctree}
+:hidden:
+:caption: crosswalk-web-env
 
 Getting Started <crosswalkwebenv/getting_started>
 ExperimentPage <crosswalkwebenv/experiment_page>
