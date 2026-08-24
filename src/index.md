@@ -60,7 +60,7 @@ for _ in range(5):
 env.close()
 ```
 
-# CrosswalkWebEnv
+# CrosswalkWebEnv [![npm version](https://img.shields.io/npm/v/crosswalk-web-env.svg)](https://www.npmjs.com/package/crosswalk-web-env)
 
 **CrosswalkWebEnv** is a React-based web implementation of the Crosswalk Task, designed for deploying experiments online and collecting behavioral data at scale. It records state–action trajectories in the same format as **CrosswalkEnv**, allowing collected data to be used directly for downstream model training and analysis, including imitation learning (IL) and inverse reinforcement learning (IRL).
 
