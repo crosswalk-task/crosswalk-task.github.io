@@ -18,6 +18,7 @@ Gymnasium environment for risky decision-making
 :muted:
 :playsinline:
 :align: center
+:autoplay:
 ```
 
 {.hidden-page-title} 
