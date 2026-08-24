@@ -60,9 +60,9 @@ for _ in range(5):
 env.close()
 ```
 
-# crosswalk-web-env
+# CrosswalkWebEnv
 
-**`crosswalk-web-env`** is a React-based web implementation of the Crosswalk Task, designed for deploying experiments online and collecting behavioral data at scale. It records state–action trajectories in the same format as **CrosswalkEnv**, allowing collected data to be used directly for downstream model training and analysis, including imitation learning (IL) and inverse reinforcement learning (IRL).
+**CrosswalkWebEnv** is a React-based web implementation of the Crosswalk Task, designed for deploying experiments online and collecting behavioral data at scale. It records state–action trajectories in the same format as **CrosswalkEnv**, allowing collected data to be used directly for downstream model training and analysis, including imitation learning (IL) and inverse reinforcement learning (IRL).
 
 ```jsx
 import ExperimentPage from 'crosswalk-web-env';
@@ -115,12 +115,12 @@ Getting Started <crosswalkenv/getting_started>
 
 ```{toctree}
 :hidden:
-:caption: crosswalk-web-env
+:caption: CrosswalkWebEnv
 
 Getting Started <crosswalkwebenv/getting_started>
 ExperimentPage <crosswalkwebenv/experiment_page>
 Live Demo <https://crosswalk-task.github.io/demo/>
-GitHub <https://github.com/crosswalk-task/crosswalk-web-env>
+GitHub <https://github.com/crosswalk-task/CrosswalkWebEnv>
 ```
 
 <!-- ```{toctree}
