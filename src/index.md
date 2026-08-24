@@ -111,7 +111,12 @@ Task Structure <crosswalktask/tast_structure>
 :caption: CrosswalkEnv
 
 Getting Started <crosswalkenv/getting_started>
+Running Crosswalk Task <crosswalkenv/task>
+Training RL Agents <crosswalkenv/training_agents>
+Observation Space <crosswalkenv/obs_space>
+GitHub <https://github.com/crosswalk-task/CrosswalkEnv>
 ```
+<!-- Release Notes <crosswalkenv/release_notes> -->
 
 ```{toctree}
 :hidden:
@@ -122,44 +127,4 @@ ExperimentPage <crosswalkwebenv/experiment_page>
 Live Demo <https://crosswalk-task.github.io/demo/>
 GitHub <https://github.com/crosswalk-task/CrosswalkWebEnv>
 ```
-
-<!-- ```{toctree}
-:hidden:
-:caption: Getting Started
-
-installation
-quickstart
-```
-
-```{toctree}
-:hidden:
-:caption: Environments
-
-environments/index
-```
-
-```{toctree}
-:hidden:
-:caption: User Guide
-
-content/algorithms
-user_guide
-faq
-```
-
-```{toctree}
-:hidden:
-:caption: Reference
-
-List of Publications <content/publications>
-bibliography/index
-```
-
-```{toctree}
-:hidden:
-:caption: Development
-
-GitHub <https://github.com/Farama-Foundation/HighwayEnv>
-release_notes/index
-Contribute to the Docs <https://github.com/Farama-Foundation/HighwayEnv/blob/main/CONTRIBUTING.md>
-``` -->
+<!-- Release Notes <crosswalkwebenv/release_notes> -->
