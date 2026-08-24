@@ -20,7 +20,7 @@ from typing import Any, Dict
 
 # import crosswalk_env
 
-project = "Crosswalk Task"
+project = "Crosswalk Task Documentation"
 copyright = "2026 Crosswalk Task"
 author = "Jinwoo Jeong"
 
@@ -89,7 +89,7 @@ myst_enable_extensions = [
 # a list of builtin themes.
 #
 html_theme = "celshast"
-html_title = "Crosswalk Task"
+html_title = project
 html_baseurl = "https://crosswalk-task.github.io"
 html_copy_source = False
 html_favicon = "_static/images/crosswalk-favicon.png"
