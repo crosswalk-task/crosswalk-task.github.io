@@ -19,6 +19,12 @@
     /* letter-spacing: 0.08em; */
 }
 
+p.caption ~ p.caption {
+  border-top: 1.5px solid rgba(255, 255, 255, 0.12);
+  margin-top: 15px;
+  padding-top: 18px;
+}
+
 .sidebar-tree .reference {
   font-size: 0.9rem;
 }
