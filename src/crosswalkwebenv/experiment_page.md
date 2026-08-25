@@ -51,7 +51,7 @@ or:
 
 If no `subjectId` is provided, the default value `"anonymous"` is used. 
 
-For an actual data-collection experiment, assigning a unique `subjectId` to each participant is recommended. See {ref}`webenv_setup_exp` for an example of automatically assigning `subjectId` from a URL query parameter.
+For an actual data-collection experiment, assigning a unique `subjectId` to each participant is recommended. See {ref}`webenv_exp_setup` for an example of automatically assigning `subjectId` from a URL query parameter.
 
 ### `sessionId`
 

@@ -124,6 +124,7 @@ GitHub <https://github.com/crosswalk-task/CrosswalkEnv>
 :caption: CrosswalkWebEnv
 
 Getting Started <crosswalkwebenv/getting_started>
+Experiment Setup <crosswalkwebenv/experiment_setup>
 ExperimentPage API <crosswalkwebenv/experiment_page>
 Live Demo <https://crosswalk-task.github.io/demo/>
 GitHub <https://github.com/crosswalk-task/CrosswalkWebEnv>
