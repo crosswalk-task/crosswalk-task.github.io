@@ -1,5 +1,5 @@
 (webenv_experiment_page)=
-# ExperimentPage
+# ExperimentPage API
 
 `ExperimentPage` is the main React component provided by `crosswalk-web-env`. It provides an entry screen where participants can review the task instructions and start a Crosswalk Task session, during which multiple episodes are played consecutively without a break.
 
@@ -181,7 +181,6 @@ Each ZIP archive contains the episode data as a set of JSON files that record th
 Omitting `localSave` leaves automatic saving disabled, as its default value is `false`. This is useful for sessions such as practice sessions where the collected behavioral data do not need to be retained.
 
 ```{admonition} Server-side data collection
-
 During the experiment used to validate the Crosswalk Task, behavioral data were uploaded to a server through HTTP requests for scalable data collection. However, network failures occasionally caused data loss in that setup, so we do not recommend server-based collection as the *default* data-saving method.
 
 In the current version of `crosswalk-web-env`, `localSave` is the only built-in mechanism for saving participant behavioral data. Because each completed episode is saved directly to the participant's local device, data storage does not require a network connection and avoids the risk of data loss caused by network failures during upload.

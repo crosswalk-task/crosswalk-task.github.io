@@ -32,12 +32,7 @@ For example, a practice session can be launched without saving the collected dat
 ```python
 from crosswalk_env import task
 
-task.run_session(
-    subj_id=1,
-    session_id=0,
-    max_seconds=300,
-    save=False,
-)
+task.run_session(subj_id=1, session_id=0, max_seconds=300, save=False)
 ```
 
 A main experimental session can be launched separately using a different configuration:
@@ -45,14 +40,10 @@ A main experimental session can be launched separately using a different configu
 ```python
 from crosswalk_env import task
 
-task.run_session(
-    subj_id=1,
-    session_id=1,
-    max_seconds=1200,
-)
+task.run_session(subj_id=1, session_id=1, max_seconds=1200)
 ```
 
-Here, `subj_id` identifies the participant, `session_id` identifies the session, and `max_seconds` specifies the maximum session duration in seconds. Setting `save=False` disables data saving, which can be useful for practice sessions. See {ref}`env_task` for details on configuration options.
+See {ref}`env_task` for details on session configuration and available options (e.g., `subj_id`, `session_id`, `max_seconds`).
 
 ### Command-Line Interface
 
