@@ -43,8 +43,6 @@ from crosswalk_env import task
 task.run_session(subj_id=1, session_id=1, max_seconds=1200)
 ```
 
-See {ref}`env_task` for details on session configuration and available options (e.g., `subj_id`, `session_id`, `max_seconds`).
-
 ### Command-Line Interface
 
 Sessions can also be launched from the command line.

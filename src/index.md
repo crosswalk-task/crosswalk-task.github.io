@@ -111,12 +111,12 @@ Task Structure <crosswalktask/tast_structure>
 :caption: CrosswalkEnv
 
 Getting Started <crosswalkenv/getting_started>
-Running Crosswalk Tasks <crosswalkenv/task>
-CrosswalkEnv API <crosswalkenv/environment>
-Training RL Agents <crosswalkenv/training_agents>
 Observation Space <crosswalkenv/obs_space>
-GitHub <https://github.com/crosswalk-task/CrosswalkEnv>
 ```
+<!-- Running Crosswalk Tasks <crosswalkenv/task> -->
+<!-- CrosswalkEnv API <crosswalkenv/environment> -->
+<!-- Training RL Agents <crosswalkenv/training_agents> -->
+<!-- GitHub <https://github.com/crosswalk-task/CrosswalkEnv> -->
 <!-- Release Notes <crosswalkenv/release_notes> -->
 
 ```{toctree}
@@ -127,6 +127,6 @@ Getting Started <crosswalkwebenv/getting_started>
 Experiment Setup <crosswalkwebenv/experiment_setup>
 ExperimentPage API <crosswalkwebenv/experiment_page>
 Live Demo <https://crosswalk-task.github.io/demo/>
-GitHub <https://github.com/crosswalk-task/CrosswalkWebEnv>
 ```
+<!-- GitHub <https://github.com/crosswalk-task/CrosswalkWebEnv> -->
 <!-- Release Notes <crosswalkwebenv/release_notes> -->
