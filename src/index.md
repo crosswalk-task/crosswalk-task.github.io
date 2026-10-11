@@ -111,10 +111,10 @@ Task Structure <crosswalktask/tast_structure>
 :caption: CrosswalkEnv
 
 Getting Started <crosswalkenv/getting_started>
+CrosswalkEnv API <crosswalkenv/api>
 Observation Space <crosswalkenv/obs_space>
 ```
 <!-- Running Crosswalk Tasks <crosswalkenv/task> -->
-<!-- CrosswalkEnv API <crosswalkenv/environment> -->
 <!-- Training RL Agents <crosswalkenv/training_agents> -->
 <!-- GitHub <https://github.com/crosswalk-task/CrosswalkEnv> -->
 <!-- Release Notes <crosswalkenv/release_notes> -->

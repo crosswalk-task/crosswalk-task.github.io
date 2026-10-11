@@ -20,13 +20,13 @@ This page describes the configuration options available for `ExperimentPage`. Fo
 
 ## Props
 
-| Prop          | Type               | Default       | Description                                                                                                                       |
-| ------------- | ------------------ | ------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| `subjectId`   | `number \| string` | `"anonymous"` | Identifier of the participant associated with the collected data.                                                                 |
-| `sessionId`   | `number`           | `1`           | Non-negative integer identifying the experiment session.                                                                          |
+| Prop          | Type               | Default       | Description |
+| ------------- | ------------------ | ------------- | ----------- |
+| `subjectId`   | `number`/`string` | `"anonymous"` | Identifier of the participant associated with the collected data. |
+| `sessionId`   | `number`           | `1`           | Non-negative integer identifying the experiment |
 | `maxEpisodes` | `number`           | `-1`          | Finite integer specifying the maximum number of episodes allowed in the session. A non-positive value disables the episode limit. |
-| `maxSeconds`  | `number`           | `-1`          | Finite integer specifying the maximum session duration in seconds. A non-positive value disables the time limit.                  |
-| `localSave`   | `boolean`          | `false`       | Whether episode results are automatically saved locally as ZIP files.                                                             |
+| `maxSeconds`  | `number`           | `-1`          | Finite integer specifying the maximum session duration in seconds. A non-positive value disables the time limit. |
+| `localSave`   | `boolean`          | `false`       | Whether episode results are automatically saved locally as ZIP files. |
 
 ```{important}
 Props are validated when `ExperimentPage` is rendered. Invalid values prevent the component from rendering and produce an error in the browser's developer console.
