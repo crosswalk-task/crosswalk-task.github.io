@@ -45,7 +45,7 @@ extensions = [
     "sphinxcontrib.video",
     "jupyter_sphinx",
     "myst_parser",
-    # "sphinx_github_changelog", # CrosswalkEnv repo has to become a public repo
+    "sphinx_github_changelog", # Release Notes for public repositories
 ]
 
 autodoc_default_flags = [
@@ -123,4 +123,4 @@ html_css_files = ["custom.css"]
 
 # -- Generate Changelog -------------------------------------------------
 
-# sphinx_github_changelog_token = os.environ.get("SPHINX_GITHUB_CHANGELOG_TOKEN")
+sphinx_github_changelog_token = os.environ.get("SPHINX_GITHUB_CHANGELOG_TOKEN")

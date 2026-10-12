@@ -114,11 +114,11 @@ Live Demo <https://crosswalk-task.github.io/demo/>
 
 Getting Started <crosswalkenv/getting_started>
 CrosswalkEnv API <crosswalkenv/api>
+Release Notes <crosswalkenv/release_notes>
+GitHub <https://github.com/crosswalk-task/CrosswalkEnv>
 ```
 <!-- Running Crosswalk Tasks <crosswalkenv/task> -->
 <!-- Training RL Agents <crosswalkenv/training_agents> -->
-<!-- GitHub <https://github.com/crosswalk-task/CrosswalkEnv> -->
-<!-- Release Notes <crosswalkenv/release_notes> -->
 
 ```{toctree}
 :hidden:
@@ -127,6 +127,6 @@ CrosswalkEnv API <crosswalkenv/api>
 Getting Started <crosswalkwebenv/getting_started>
 Experiment Setup <crosswalkwebenv/experiment_setup>
 ExperimentPage API <crosswalkwebenv/experiment_page>
+Release Notes <crosswalkwebenv/release_notes>
+GitHub <https://github.com/crosswalk-task/CrosswalkWebEnv>
 ```
-<!-- GitHub <https://github.com/crosswalk-task/CrosswalkWebEnv> -->
-<!-- Release Notes <crosswalkwebenv/release_notes> -->
