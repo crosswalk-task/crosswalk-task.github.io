@@ -19,7 +19,7 @@ npm install crosswalk-web-env
 
 ## How to Run Crosswalk Task in a Web Browser
 
-A Live Demo is available at [https://crosswalk-task.github.io/demo](https://crosswalk-task.github.io/demo/). You can use the demo to run and interact with Crosswalk Task directly in a web browser without setting up a local React project.
+A Live Demo is available [here](https://crosswalk-task.github.io/demo/). You can use the demo to run and interact with Crosswalk Task directly in a web browser without setting up a local React project.
 
 To set up a similar web application, start by creating a minimal React app with [Vite](https://vite.dev/). The following commands generate the boilerplate code and install `crosswalk-web-env`. The example below was tested using Node.js `v22.23.2`, npm `v10.9.8`, [create-vite](https://www.npmjs.com/package/create-vite) `v9.1.2`, and [Vite](https://www.npmjs.com/package/vite) `v8.2.2`.
 

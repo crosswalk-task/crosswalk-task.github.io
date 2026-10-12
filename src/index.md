@@ -104,6 +104,8 @@ export default function App() {
 :caption: Crosswalk Task
 
 Task Structure <crosswalktask/tast_structure>
+Observation Space <crosswalktask/obs_space>
+Live Demo <https://crosswalk-task.github.io/demo/>
 ```
 
 ```{toctree}
@@ -112,7 +114,6 @@ Task Structure <crosswalktask/tast_structure>
 
 Getting Started <crosswalkenv/getting_started>
 CrosswalkEnv API <crosswalkenv/api>
-Observation Space <crosswalkenv/obs_space>
 ```
 <!-- Running Crosswalk Tasks <crosswalkenv/task> -->
 <!-- Training RL Agents <crosswalkenv/training_agents> -->
@@ -126,7 +127,6 @@ Observation Space <crosswalkenv/obs_space>
 Getting Started <crosswalkwebenv/getting_started>
 Experiment Setup <crosswalkwebenv/experiment_setup>
 ExperimentPage API <crosswalkwebenv/experiment_page>
-Live Demo <https://crosswalk-task.github.io/demo/>
 ```
 <!-- GitHub <https://github.com/crosswalk-task/CrosswalkWebEnv> -->
 <!-- Release Notes <crosswalkwebenv/release_notes> -->
