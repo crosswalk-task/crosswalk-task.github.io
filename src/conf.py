@@ -96,7 +96,7 @@ html_favicon = "_static/images/crosswalk-favicon.png"
 html_theme_options = {
     # "light_logo": "img/crosswalk.svg",
     # "dark_logo": "img/crosswalk-white.svg",
-    # "image": "img/crosswalk-github.png",
+    "image": "images/ingame.png",
     # "gtag": "G-6H9C8TWXZ8",
     "description": "Gymnasium environment for risky decision-making tasks",
     "versioning": True,
