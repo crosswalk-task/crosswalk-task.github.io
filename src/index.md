@@ -28,7 +28,8 @@ Gymnasium environment for risky decision-making
 
 **Crosswalk Task** is a naturalistic reinforcement learning paradigm for studying risk taking through real-time decision making. Inspired by road-crossing games such as [Crossy Road](https://crossyroadgame.io) and [Frogger](https://en.wikipedia.org/wiki/Frogger), participants cross roads while avoiding collisions with vehicles. The task introduces *crosswalks*, requiring participants to continuously choose between jaywalking as a risk-taking strategy and using crosswalks as a risk-averse strategy.
 
-# CrosswalkEnv [![PyPI version](https://img.shields.io/pypi/v/crosswalk-env.svg)](https://pypi.org/project/crosswalk-env/)
+# CrosswalkEnv [![PyPI version](https://img.shields.io/pypi/v/crosswalk-env.svg)](https://pypi.org/project/crosswalk-env/) [![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)](https://github.com/crosswalk-task/CrosswalkEnv)
+
 
 **CrosswalkEnv** is the Python/Gymnasium implementation of the Crosswalk Task. It is designed as an integrated framework for **human behavioral data collection** and **reinforcement learning model training**.
 
@@ -60,7 +61,7 @@ for _ in range(5):
 env.close()
 ```
 
-# CrosswalkWebEnv [![npm version](https://img.shields.io/npm/v/crosswalk-web-env.svg)](https://www.npmjs.com/package/crosswalk-web-env)
+# CrosswalkWebEnv [![npm version](https://img.shields.io/npm/v/crosswalk-web-env.svg)](https://www.npmjs.com/package/crosswalk-web-env) [![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)](https://github.com/crosswalk-task/CrosswalkWebEnv)
 
 **CrosswalkWebEnv** is a React-based web implementation of the Crosswalk Task, designed for deploying experiments online and collecting behavioral data at scale. It records state–action trajectories in the same format as **CrosswalkEnv**, allowing collected data to be used directly for downstream model training and analysis, including imitation learning (IL) and inverse reinforcement learning (IRL).
 
@@ -107,7 +108,7 @@ Task Structure <crosswalktask/tast_structure>
 Observation Space <crosswalktask/obs_space>
 Live Demo <https://crosswalk-task.github.io/demo/>
 ```
-
+ 
 ```{toctree}
 :hidden:
 :caption: CrosswalkEnv
@@ -119,6 +120,7 @@ GitHub <https://github.com/crosswalk-task/CrosswalkEnv>
 ```
 <!-- Running Crosswalk Tasks <crosswalkenv/task> -->
 <!-- Training RL Agents <crosswalkenv/training_agents> -->
+
 
 ```{toctree}
 :hidden:
