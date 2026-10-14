@@ -82,22 +82,22 @@ export default function App() {
 <!-- 2. a description of the available {ref}`environments <environments>` and their configuration options;
 3. a {ref}`detailed guide <user_guide>` covering the nuts and bolts of the project, and how *you* can contribute. -->
 
-<!-- (index-how-to-cite-this-work)= -->
-<!-- # How to cite this work? -->
+(index-how-to-cite-this-work)=
+# How to cite this work?
 
-<!-- If you use this package, please consider citing it with this piece of BibTeX: -->
-<!-- TODO: replace with preprint -->
+If you use this package, please consider citing it with this piece of BibTeX:
 
-<!-- ```bibtex
-@misc{crosswalk-env,
-  author = {Jeong, Jinwoo},
-  title = {CrosswalkEnv},
-  year = {2026},
-  publisher = {GitHub},
-  journal = {GitHub repository},
-  howpublished = {\url{https://github.com/crosswalk-task/CrosswalkEnv}},
+```bibtex
+@misc{crosswalktask,
+  title        = {Crosswalk Task: A naturalistic reinforcement learning paradigm for characterizing real-world risky behavior},
+  author       = {Jeong, Jinwoo and Ahn, Woo-Young},
+  year         = {2026},
+  howpublished = {Research Square},
+  note         = {Preprint},
+  doi          = {10.21203/rs.3.rs-11343272/v1},
+  url          = {https://doi.org/10.21203/rs.3.rs-11343272/v1}
 }
-``` -->
+```
 
 <!-- sections for the main navigation bar -->
 ```{toctree}
